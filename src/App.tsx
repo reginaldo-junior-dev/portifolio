@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -21,6 +22,8 @@ export function App() {
         <Contact />
       </main>
       <Footer />
+      {/* Contagem de visitas da Vercel (docs/spec.md, Stack). Sem cookies; só envia dados no deploy. */}
+      <Analytics />
     </>
   );
 }

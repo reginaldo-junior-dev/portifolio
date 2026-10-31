@@ -42,7 +42,10 @@ export const projects: Project[] = [
     links: {
       deploy: 'https://frontend-sistema-venda-carros.vercel.app',
       repositories: [
-        { label: 'API', href: 'https://github.com/reginaldo-junior-dev/api-sistema-venda-carros' },
+        {
+          label: 'Back-end',
+          href: 'https://github.com/reginaldo-junior-dev/api-sistema-venda-carros',
+        },
         {
           label: 'Front-end',
           href: 'https://github.com/reginaldo-junior-dev/frontend-sistema-venda-carros',

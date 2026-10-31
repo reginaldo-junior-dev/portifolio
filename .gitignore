@@ -1,0 +1,34 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+*.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor e sistema operacional
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Relatórios locais (Lighthouse etc.)
+*.report.html
+lighthouse-*/
+
+# Documentação de trabalho (spec, design, progresso e instruções do assistente), só local
+CLAUDE.md
+docs/

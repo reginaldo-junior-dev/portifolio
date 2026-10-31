@@ -90,6 +90,14 @@
     outline-offset: 3px;
   }
 
+  /* A cor do anel fica fixa em --accent também fora do foco. Sem isso, o `transition-colors`
+     dos links e botões anima a cor do anel a partir da cor do texto por 150ms (no botão
+     principal, começa escuro e quase invisível). */
+  a,
+  button {
+    outline-color: var(--color-accent);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;

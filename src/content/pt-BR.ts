@@ -21,6 +21,10 @@ export const ptBR: Content = {
       height: 630,
     },
   },
+  separators: {
+    section: '—',
+    inline: '·',
+  },
   a11y: {
     skipToContent: 'Pular para o conteúdo',
     opensInNewTab: '(abre em nova aba)',

@@ -140,6 +140,11 @@ export interface ResumeLink {
 
 export interface Content {
   meta: MetaContent;
+  // Pontuação visível usada entre partes de um rótulo (`01 — SOBRE`, `PROJETO PRINCIPAL · WEB`).
+  separators: {
+    section: string;
+    inline: string;
+  };
   a11y: {
     skipToContent: string;
     opensInNewTab: string;

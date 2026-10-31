@@ -41,7 +41,7 @@ export function FeaturedProject({ project }: FeaturedProjectProps) {
         <p className="font-mono text-label text-text-muted uppercase">
           <span aria-hidden="true" className="mr-2 inline-block size-2 bg-accent align-middle" />
           {labels.featuredLabel}
-          <span aria-hidden="true"> · </span>
+          <span aria-hidden="true"> {content.separators.inline} </span>
           {project.type}
         </p>
         <h3 id={titleId} className="mt-3 text-h3-featured text-text">

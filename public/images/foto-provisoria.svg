@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
-  <!-- Provisória (4:5), até a foto real entrar. Cores de docs/design.md: surface e border. -->
-  <rect width="400" height="500" fill="#12151A" />
-  <circle cx="200" cy="190" r="70" fill="#262B33" />
-  <path d="M70 500a130 130 0 0 1 260 0z" fill="#262B33" />
-</svg>

@@ -50,12 +50,12 @@ export const ptBR: Content = {
     lead: 'Desenvolvedor back-end Java. Construo APIs com Spring Boot pensando em segurança, consistência dos dados e testes.',
     availability:
       'Disponível para vagas back-end Java júnior ou estágio · Remoto, híbrido ou presencial no Rio de Janeiro',
-    // Provisória até a foto real (docs/progresso.md, pendências).
+    // A moldura é 4:5 (object-cover); a foto é um pouco mais alta e perde só as bordas de cima e de baixo.
     photo: {
-      src: '/images/foto-provisoria.svg',
+      src: '/images/foto.webp',
       alt: 'Foto de Reginaldo Junior',
-      width: 400,
-      height: 500,
+      width: 720,
+      height: 992,
     },
     primaryCta: { label: 'Ver projetos', href: '#projetos' },
   },

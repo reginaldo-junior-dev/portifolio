@@ -6,8 +6,8 @@ const linkedinUrl = 'https://www.linkedin.com/in/reginaldo-junior-ws-dev/';
 
 export const ptBR: Content = {
   meta: {
-    // Provisório até o deploy na Vercel (tarefa 8.1): trocar pelo endereço final.
-    siteUrl: 'https://reginaldo-junior.vercel.app',
+    // Endereço do deploy na Vercel (tarefa 8.1). Se mudar (ex.: domínio próprio), trocar aqui.
+    siteUrl: 'https://portifolio-chi-azure-69.vercel.app',
     title: 'Reginaldo Junior · Desenvolvedor Back-end Java',
     description:
       'Portfólio de Reginaldo Junior, desenvolvedor back-end Java em busca de vaga júnior ou estágio. APIs com Spring Boot, segurança, testes e CI/CD. Rio de Janeiro.',

@@ -33,6 +33,7 @@ export function ProjectRow({ project }: ProjectRowProps) {
                 width={image.width}
                 height={image.height}
                 loading="lazy"
+                decoding="async"
                 className="block h-auto w-full"
               />
             </div>

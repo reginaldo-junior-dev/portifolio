@@ -31,6 +31,7 @@ export function FeaturedProject({ project }: FeaturedProjectProps) {
             width={image.width}
             height={image.height}
             loading="lazy"
+            decoding="async"
             className="block h-auto w-full"
           />
         </div>

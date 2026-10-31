@@ -33,10 +33,10 @@ export const projects: Project[] = [
     },
     images: [
       {
-        src: '/images/projetos/patio.png',
+        src: '/images/projetos/patio.webp',
         alt: 'Página inicial do Pátio: chamada para o catálogo de carros e busca por marca, tipo e preço',
-        width: 1897,
-        height: 911,
+        width: 1280,
+        height: 615,
       },
     ],
     links: {
@@ -75,10 +75,10 @@ export const projects: Project[] = [
     },
     images: [
       {
-        src: '/images/projetos/orbit.png',
+        src: '/images/projetos/orbit.webp',
         alt: 'Página inicial do Orbit, SaaS de produtividade, com a chamada principal e o botão para começar',
-        width: 1900,
-        height: 910,
+        width: 1280,
+        height: 613,
       },
     ],
     links: {
@@ -101,10 +101,10 @@ export const projects: Project[] = [
     },
     images: [
       {
-        src: '/images/projetos/estoque.png',
+        src: '/images/projetos/estoque.webp',
         alt: 'Tela de cadastro de produto do Gerenciador de Estoque, com nome, categoria, validade, quantidade e preço',
-        width: 1320,
-        height: 701,
+        width: 1280,
+        height: 680,
       },
     ],
     links: {

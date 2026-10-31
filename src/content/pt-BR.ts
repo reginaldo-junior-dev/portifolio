@@ -5,6 +5,22 @@ const githubUrl = 'https://github.com/reginaldo-junior-dev';
 const linkedinUrl = 'https://www.linkedin.com/in/reginaldo-junior-ws-dev/';
 
 export const ptBR: Content = {
+  meta: {
+    // Provisório até o deploy na Vercel (tarefa 8.1): trocar pelo endereço final.
+    siteUrl: 'https://reginaldo-junior.vercel.app',
+    title: 'Reginaldo Junior · Desenvolvedor Back-end Java',
+    description:
+      'Portfólio de Reginaldo Junior, desenvolvedor back-end Java em busca de vaga júnior ou estágio. APIs com Spring Boot, segurança, testes e CI/CD. Rio de Janeiro.',
+    locale: 'pt_BR',
+    siteName: 'Reginaldo Junior',
+    // Criada na tarefa 6.2.
+    ogImage: {
+      src: '/images/og.png',
+      alt: 'Reginaldo Junior, desenvolvedor back-end Java',
+      width: 1200,
+      height: 630,
+    },
+  },
   a11y: {
     skipToContent: 'Pular para o conteúdo',
     opensInNewTab: '(abre em nova aba)',

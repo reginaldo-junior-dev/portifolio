@@ -1,6 +1,6 @@
 // Tipos do conteúdo da interface. Um futuro `en.ts` segue o mesmo tipo.
 // Por enquanto só existem os campos do layout base, do hero, do Sobre mim, das Habilidades, dos
-// Projetos, da Formação e do Contato; as metatags entram na Fase 6.
+// Projetos, da Formação e do Contato, além das metatags.
 
 export interface NavItem {
   label: string;
@@ -121,6 +121,17 @@ export interface ContactContent {
   items: ContactItem[];
 }
 
+// Metatags do <head> (SEO, Open Graph e Twitter Card). Escritas no index.html pelo plugin
+// do vite.config.ts, para os robôs de prévia, que não rodam JavaScript.
+export interface MetaContent {
+  siteUrl: string;
+  title: string;
+  description: string;
+  locale: string;
+  siteName: string;
+  ogImage: Image;
+}
+
 // Usado no Início e no Contato. O tamanho do arquivo faz parte do rótulo.
 export interface ResumeLink {
   href: string;
@@ -128,6 +139,7 @@ export interface ResumeLink {
 }
 
 export interface Content {
+  meta: MetaContent;
   a11y: {
     skipToContent: string;
     opensInNewTab: string;

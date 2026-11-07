@@ -8,7 +8,6 @@ import { Projects } from './components/Projects';
 import { Education } from './components/Education';
 import { Contact } from './components/Contact';
 
-// Todas as seções da página (docs/spec.md, seção 3), na ordem da spec.
 export function App() {
   return (
     <>
@@ -22,7 +21,6 @@ export function App() {
         <Contact />
       </main>
       <Footer />
-      {/* Contagem de visitas da Vercel (docs/spec.md, Stack). Sem cookies; só envia dados no deploy. */}
       <Analytics />
     </>
   );

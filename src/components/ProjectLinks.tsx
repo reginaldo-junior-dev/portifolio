@@ -10,8 +10,6 @@ interface ProjectLinksProps {
   className?: string;
 }
 
-// Links de um projeto (docs/design.md 8.1): deploy como botão secundário e repositórios e
-// Swagger como links de texto. Link sem valor não gera elemento.
 export function ProjectLinks({ links, className = '' }: ProjectLinksProps) {
   return (
     <div className={`flex flex-wrap items-center gap-3 ${className}`}>

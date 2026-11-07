@@ -1,6 +1,5 @@
 import type { Project } from '../types';
 
-// Projetos na ordem da spec (docs/spec.md 3.4). O primeiro é o projeto em destaque.
 export const projects: Project[] = [
   {
     id: 'patio',

@@ -20,7 +20,6 @@ const variants: Record<ButtonVariant, string> = {
   secondary: 'border border-border-strong text-text hover:border-text-muted hover:bg-surface-2',
 };
 
-// Botão como link (todas as ações do site são navegação ou download).
 export function Button({
   href,
   children,

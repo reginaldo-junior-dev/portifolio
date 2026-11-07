@@ -1,7 +1,3 @@
-// Tipos do conteúdo da interface. Um futuro `en.ts` segue o mesmo tipo.
-// Por enquanto só existem os campos do layout base, do hero, do Sobre mim, das Habilidades, dos
-// Projetos, da Formação e do Contato, além das metatags.
-
 export interface NavItem {
   label: string;
   href: string;
@@ -23,7 +19,6 @@ export interface HeroContent {
   primaryCta: NavItem;
 }
 
-// O primeiro parágrafo é a abertura da seção (estilo Lead).
 export interface AboutContent {
   number: string;
   label: string;
@@ -31,7 +26,6 @@ export interface AboutContent {
   paragraphs: string[];
 }
 
-// As tecnologias já vêm em texto corrido, com a pontuação, para o componente não escrever nada.
 export interface SkillGroup {
   category: string;
   technologies: string;
@@ -44,7 +38,6 @@ export interface SkillsContent {
   groups: SkillGroup[];
 }
 
-// Rótulos da seção Projetos. Os textos de cada projeto ficam em `src/data/projects.ts`.
 export interface ProjectsContent {
   number: string;
   label: string;
@@ -52,13 +45,11 @@ export interface ProjectsContent {
   featuredLabel: string;
   backendLabel: string;
   frontendLabel: string;
-  // Usado quando o projeto só tem tags de back-end (sem front-end), como o Estoque.
   technologiesLabel: string;
   deployLabel: string;
   swaggerLabel: string;
 }
 
-// Listas vazias e links sem valor não geram elemento na tela.
 export interface Project {
   id: string;
   name: string;
@@ -77,14 +68,12 @@ export interface Project {
   };
 }
 
-// `details` junta instituição e situação ("Estácio · Em andamento ...").
 export interface EducationItem {
   period: string;
   course: string;
   details: string;
 }
 
-// Link de validação opcional: sem valor, não gera elemento.
 export interface Certification {
   name: string;
   issuer: string;
@@ -92,7 +81,6 @@ export interface Certification {
   href?: string;
 }
 
-// Lista de certificações vazia esconde a subseção inteira.
 export interface EducationContent {
   number: string;
   label: string;
@@ -105,7 +93,6 @@ export interface EducationContent {
   };
 }
 
-// `value` é o endereço legível mostrado na tela; `external` abre em nova aba.
 export interface ContactItem {
   label: string;
   value: string;
@@ -121,8 +108,6 @@ export interface ContactContent {
   items: ContactItem[];
 }
 
-// Metatags do <head> (SEO, Open Graph e Twitter Card). Escritas no index.html pelo plugin
-// do vite.config.ts, para os robôs de prévia, que não rodam JavaScript.
 export interface MetaContent {
   siteUrl: string;
   title: string;
@@ -132,7 +117,6 @@ export interface MetaContent {
   ogImage: Image;
 }
 
-// Usado no Início e no Contato. O tamanho do arquivo faz parte do rótulo.
 export interface ResumeLink {
   href: string;
   label: string;
@@ -140,7 +124,6 @@ export interface ResumeLink {
 
 export interface Content {
   meta: MetaContent;
-  // Pontuação visível usada entre partes de um rótulo (`01 — SOBRE`, `PROJETO PRINCIPAL · WEB`).
   separators: {
     section: string;
     inline: string;

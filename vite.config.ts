@@ -10,9 +10,6 @@ const escapeHtml = (value: string) =>
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;');
 
-// Escreve as metatags (docs/spec.md 7) no lugar do comentário <!--app-meta--> do index.html,
-// com os textos de `content.meta`. Assim o HTML já sai pronto para o Google e para as
-// prévias de link (LinkedIn, WhatsApp), que não rodam JavaScript.
 function metaTags(): Plugin {
   const { meta } = content;
   const imageUrl = new URL(meta.ogImage.src, meta.siteUrl).href;

@@ -8,8 +8,6 @@ interface ProjectTagsProps {
   tags: Project['tags'];
 }
 
-// Grupos de tecnologias de um projeto (docs/design.md 8.1 e 8.4). Grupos vazios não aparecem.
-// Sem front-end, o único grupo se chama "Tecnologias" em vez de "Back-end".
 export function ProjectTags({ tags }: ProjectTagsProps) {
   const hasFrontend = tags.frontend.length > 0;
   const groups = [

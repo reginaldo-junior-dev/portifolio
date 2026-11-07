@@ -1,5 +1,3 @@
-// Ícones funcionais de docs/design.md, seção 7: traço de 1.5px, sempre decorativos
-// (aria-hidden). O rótulo acessível fica no elemento que contém o ícone.
 // Traçados baseados no Lucide (licença ISC).
 
 export type IconName = 'github' | 'linkedin' | 'download' | 'external' | 'arrow-right';

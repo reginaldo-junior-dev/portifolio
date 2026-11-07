@@ -8,10 +8,6 @@ import { TextLink } from './ui/TextLink';
 
 const { contact, resume } = content;
 
-// Contato (docs/spec.md 3.6 e 4; docs/design.md 7 e 9). Só links, sem formulário: mesma lista
-// em linhas das Habilidades e da Formação, com o rótulo mono à esquerda (3 colunas no
-// desktop, em cima no mobile) e o endereço clicável à direita. E-mail na mesma aba; LinkedIn
-// e GitHub em nova aba. Abaixo, o botão principal de download do currículo.
 export function Contact() {
   const ref = useInView<HTMLElement>();
 

@@ -1,9 +1,5 @@
 @import 'tailwindcss';
 
-/* Fontes hospedadas no próprio site (public/fonts/), só o subconjunto latino, que cobre o
-   português. Saíram do Google Fonts porque o CSS externo bloqueava a primeira pintura por
-   ~0,9 s no mobile (Lighthouse). O Plex Sans é variável: um arquivo cobre os pesos 400 a 600.
-   Licença: SIL Open Font License 1.1. */
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -28,8 +24,6 @@
   src: url('/fonts/ibm-plex-mono-500-latin.woff2') format('woff2');
 }
 
-/* Tokens de docs/design.md. As paletas padrão do Tailwind são desligadas
-   para que só os valores do design existam como classes. */
 @theme {
   --color-*: initial;
   --color-bg: #0b0d10;
@@ -118,9 +112,6 @@
     outline-offset: 3px;
   }
 
-  /* A cor do anel fica fixa em --accent também fora do foco. Sem isso, o `transition-colors`
-     dos links e botões anima a cor do anel a partir da cor do texto por 150ms (no botão
-     principal, começa escuro e quase invisível). */
   a,
   button {
     outline-color: var(--color-accent);
@@ -132,9 +123,6 @@
     }
   }
 
-  /* Entrada das seções (docs/design.md 10.1; hook useInView). Só esconde com JS ativo
-     (classe js-reveal, posta em main.tsx) e sem movimento reduzido: sem uma das duas
-     coisas, o conteúdo aparece direto. */
   @media (prefers-reduced-motion: no-preference) {
     [data-reveal] {
       transition:

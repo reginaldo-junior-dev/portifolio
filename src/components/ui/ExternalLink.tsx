@@ -8,7 +8,6 @@ interface ExternalLinkProps {
   className?: string;
 }
 
-// Link de texto que abre em nova aba, com ↗ e aviso para leitores de tela.
 export function ExternalLink({ href, children, className }: ExternalLinkProps) {
   return (
     <TextLink href={href} target="_blank" rel="noopener noreferrer" className={className}>

@@ -8,11 +8,8 @@ import { SectionLabel } from './ui/SectionLabel';
 
 const { projects: labels } = content;
 
-// O primeiro projeto do arquivo de dados é o destaque; os outros viram linhas abaixo dele.
 const [featured, ...others] = projects;
 
-// Projetos (docs/spec.md 3.4; docs/design.md 8): lista vertical com hierarquia,
-// com o Pátio em largura total no topo e o Orbit e o Estoque em linhas menores.
 export function Projects() {
   const ref = useInView<HTMLElement>();
 

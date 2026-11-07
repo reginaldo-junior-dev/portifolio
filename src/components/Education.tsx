@@ -12,10 +12,6 @@ const rowClassName =
 const termClassName = 'col-span-4 font-mono text-label text-text-muted uppercase lg:col-span-3';
 const valueClassName = 'col-span-4 lg:col-span-9';
 
-// Formação (docs/spec.md 3.5; docs/design.md 6 e 9). Mesmo padrão de linhas das Habilidades:
-// período em Rótulo mono à esquerda (3 colunas no desktop, em cima no mobile) e, à direita,
-// curso e, abaixo, instituição e situação. As certificações seguem o mesmo padrão e só
-// aparecem quando a lista tem itens.
 export function Education() {
   const ref = useInView<HTMLElement>();
 

@@ -6,12 +6,6 @@ interface ProjectRowProps {
   project: Project;
 }
 
-// Linha de projeto abaixo do destaque: Orbit e Estoque (docs/spec.md 3.4.2 e 3.4.3;
-// docs/design.md 8.1 e 8.3). Mesmo padrão do Pátio: no desktop, a coluna da esquerda (5) tem
-// os prints, as tecnologias e os links; a da direita (7) tem rótulo, título, descrição e
-// autoria. A última linha da grade é flexível, para que a altura do texto não abra espaço
-// entre os prints e as tecnologias. No mobile, tudo empilhado na ordem do código. Com 2
-// prints, eles ficam um embaixo do outro, com 12px entre eles.
 export function ProjectRow({ project }: ProjectRowProps) {
   const titleId = `projeto-${project.id}-titulo`;
 

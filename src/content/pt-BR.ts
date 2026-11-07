@@ -1,19 +1,16 @@
 import type { Content } from '../types';
 
-// Usados nos links do Início e do rodapé e na lista do Contato.
 const githubUrl = 'https://github.com/reginaldo-junior-dev';
 const linkedinUrl = 'https://www.linkedin.com/in/reginaldo-junior-ws-dev/';
 
 export const ptBR: Content = {
   meta: {
-    // Endereço do deploy na Vercel (tarefa 8.1). Se mudar (ex.: domínio próprio), trocar aqui.
     siteUrl: 'https://portifolio-chi-azure-69.vercel.app',
     title: 'Reginaldo Junior · Desenvolvedor Back-end Java',
     description:
       'Portfólio de Reginaldo Junior, desenvolvedor back-end Java em busca de vaga júnior ou estágio. APIs com Spring Boot, segurança, testes e CI/CD. Rio de Janeiro.',
     locale: 'pt_BR',
     siteName: 'Reginaldo Junior',
-    // Criada na tarefa 6.2.
     ogImage: {
       src: '/images/og.png',
       alt: 'Reginaldo Junior, desenvolvedor back-end Java',
@@ -50,7 +47,6 @@ export const ptBR: Content = {
     lead: 'Desenvolvedor back-end Java. Construo APIs com Spring Boot pensando em segurança, consistência dos dados e testes.',
     availability:
       'Disponível para vagas back-end Java júnior ou estágio · Remoto, híbrido ou presencial no Rio de Janeiro',
-    // A moldura é 4:5 (object-cover); a foto é um pouco mais alta e perde só as bordas de cima e de baixo.
     photo: {
       src: '/images/foto.webp',
       alt: 'Foto de Reginaldo Junior',
@@ -66,7 +62,6 @@ export const ptBR: Content = {
     paragraphs: [
       'Olá! Sou estudante de Análise e Desenvolvimento de Sistemas na Estácio e estou em busca da minha primeira oportunidade como Desenvolvedor Back-end Java.',
       'Minha jornada começou no curso técnico do SENAI, e foi lá que o Java e o back-end me pegaram: descobri que gosto da arquitetura que ninguém vê, mas que precisa ser resiliente e funcionar sempre. Por isso, trato cada projeto de estudo como se fosse para produção.',
-      'Antes de focar 100% em desenvolvimento, construí uma base em marketing. Essa experiência me ajuda a enxergar o produto além do código: penso em quem vai usar o sistema e no valor que ele entrega para o negócio.',
     ],
   },
   skills: {
@@ -112,7 +107,6 @@ export const ptBR: Content = {
         details: 'SENAI · Concluído',
       },
     ],
-    // Pendente (docs/spec.md 3.5). Enquanto estiver vazia, a subseção não aparece.
     certifications: {
       title: 'Certificações',
       validateLabel: 'Validar certificado',

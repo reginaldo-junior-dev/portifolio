@@ -5,9 +5,6 @@ import { TextLink } from './ui/TextLink';
 
 const { hero, resume, links } = content;
 
-// Início (docs/spec.md 3.1; docs/design.md 4.3 e 9). No mobile a foto vem acima do
-// título em 96px; no desktop, texto em 7 colunas e foto em 4, alinhada ao topo. O espaço
-// abaixo do hero é menor que o das outras seções, para o Sobre mim ficar mais perto.
 export function Hero() {
   return (
     <section id="inicio" aria-labelledby="inicio-titulo" className="pt-24 pb-16 lg:pt-32 lg:pb-20">

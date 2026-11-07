@@ -5,9 +5,6 @@ import { SectionLabel } from './ui/SectionLabel';
 
 const { skills } = content;
 
-// Habilidades (docs/spec.md 3.3; docs/design.md 6 e 9). Lista de definição em linhas:
-// categoria em Rótulo mono à esquerda (3 colunas no desktop, em cima no mobile) e
-// tecnologias em texto corrido à direita, com divisórias de 1px entre as linhas.
 export function Skills() {
   const ref = useInView<HTMLElement>();
 

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-// Indica se a página já saiu do topo (borda do header, docs/design.md 6 e 10.1).
 export function useScrolled(): boolean {
   const [scrolled, setScrolled] = useState(() => window.scrollY > 0);
 

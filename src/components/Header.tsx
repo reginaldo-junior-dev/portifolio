@@ -6,14 +6,11 @@ import { Container } from './ui/Container';
 
 const { header, a11y } = content;
 
-// Ids das seções do menu, na ordem ("#sobre" vira "sobre").
 const sectionIds = header.nav.map((item) => item.href.slice(1));
 
 const navLinkClass =
   'inline-flex min-h-11 items-center text-small font-medium transition-colors duration-150 ease-out hover:text-text';
 
-// Sublinhado de 2px em --accent embaixo do texto do item ativo (docs/design.md 5 e 10).
-// Cresce com scaleX em 200ms; com movimento reduzido, aparece direto.
 const underlineClass =
   'relative after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:origin-left after:bg-accent after:transition-transform after:duration-200 after:ease-out motion-reduce:after:transition-none';
 
@@ -86,7 +83,6 @@ export function Header() {
             {menuOpen ? header.menuClose : header.menuOpen}
           </button>
 
-          {/* Lista em coluna logo abaixo do botão, alinhada à direita, sem ocupar a largura da tela. */}
           <div
             id="menu-mobile"
             hidden={!menuOpen}

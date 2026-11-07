@@ -9,11 +9,6 @@ interface FeaturedProjectProps {
   project: Project;
 }
 
-// Card do Pátio (docs/spec.md 3.4.1; docs/design.md 8.1 e 8.2). No desktop, a coluna da
-// esquerda (7) tem o print, na proporção do arquivo (sem corte), as tecnologias e os links; a da
-// direita (5) tem rótulo, título, descrição e autoria. A última linha da grade é flexível,
-// para que a altura do texto não abra espaço entre o print e as tecnologias. No mobile, tudo
-// empilhado na ordem do código: print, texto, tecnologias e links.
 export function FeaturedProject({ project }: FeaturedProjectProps) {
   const titleId = `projeto-${project.id}-titulo`;
   const [image] = project.images;
